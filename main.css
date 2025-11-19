@@ -61,6 +61,7 @@ h1, h2 {
   border-radius: 12px;
 }
 
+
 .navbar {
     width: 100%;
     background: #111;
@@ -69,11 +70,12 @@ h1, h2 {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    position: fixed;      
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: 999;          
+    z-index: 999;
 }
+
 
 .nav-logo {
     font-size: 22px;
@@ -81,10 +83,16 @@ h1, h2 {
 }
 
 
+.nav-links {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;   
+    margin-left: 40px;
+}
+
 .nav-links a {
     color: white;
     text-decoration: none;
-    margin-left: 25px;
     font-size: 16px;
     font-weight: 500;
     transition: 0.3s;
@@ -93,6 +101,12 @@ h1, h2 {
 .nav-links a:hover {
     color: #f0b800;
 }
+
+
+body {
+    padding-top: 70px;
+}
+
 
 
 body {
