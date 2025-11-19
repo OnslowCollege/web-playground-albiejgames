@@ -1,11 +1,37 @@
-
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f5f5f5;
   color: #222;
+  padding-top: 80px; /* room for fixed nav */
 }
 
+/* ====== FIXED TOP NAV BAR ====== */
+.top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #111;
+    display: flex;
+    justify-content: space-around;  /* spreads links evenly */
+    align-items: center;
+    padding: 15px 0;
+    z-index: 9999;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.top-nav a:hover {
+    color: #f0b800;
+}
+
+/* ===== HEADER ===== */
 header {
   background-color: #111;
   color: white;
@@ -13,23 +39,7 @@ header {
   text-align: center;
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-  background-color: #222;
-}
-
-nav a {
-  color: white;
-  padding: 14px 20px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  background-color: #444;
-}
-
+/* ===== GENERAL LAYOUT ===== */
 .container {
   max-width: 900px;
   margin: auto;
@@ -40,7 +50,7 @@ h1, h2 {
   text-align: center;
 }
 
-
+/* ===== HERO SECTION ===== */
 .hero {
   text-align: center;
   padding: 40px 20px;
@@ -52,32 +62,15 @@ h1, h2 {
   box-shadow: 0px 0px 10px #777;
 }
 
-
-.story-img {
-  width: 100%;
-  max-width: 700px;
+/* ===== IMAGE CENTERING ===== */
+.center {
   display: block;
-  margin: 20px auto;
-  border-radius: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
-
-body {
-    padding-top: 70px;
-}
-
-
-body {
-    padding-top: 70px;
-}
-
-
-
-body {
-    padding-top: 70px;
-}
-
-
+/* ===== VIDEO CARD (for other pages) ===== */
 .video-card {
   background: white;
   padding: 20px;
@@ -90,35 +83,4 @@ body {
   width: 100%;
   height: 350px;
   border-radius: 12px;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-
-.top-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;              /* full width */
-    background: #111;
-    display: flex;
-    justify-content: space-between; /* spreads links LEFT → RIGHT */
-    padding: 15px 40px;       /* spacing from edges */
-    z-index: 9999;
-}
-
-.top-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-body {
-    padding-top: 70px; /* prevents content from hiding behind nav */
 }
