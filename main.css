@@ -100,36 +100,25 @@ body {
 }
 
 
-/* ==== FORCE NAV BAR TO TOP, FULL WIDTH ==== */
-#top-nav {
-    position: fixed !important;   /* overrides all other rules */
-    top: 0 !important;
-    left: 0 !important;
-
-    width: 100% !important;
-    height: 60px;
-
+.top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;              /* full width */
     background: #111;
-    display: flex !important;
-    justify-content: space-around !important;
-    align-items: center !important;
-
-    z-index: 9999 !important;  /* ensures it sits above all content */
+    display: flex;
+    justify-content: space-between; /* spreads links LEFT → RIGHT */
+    padding: 15px 40px;       /* spacing from edges */
+    z-index: 9999;
 }
 
-#top-nav a {
+.top-nav a {
     color: white;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-    transition: 0.3s;
 }
 
-#top-nav a:hover {
-    color: #f0b800;
-}
-
-/* Make room under fixed nav */
 body {
-    padding-top: 70px !important;
+    padding-top: 70px; /* prevents content from hiding behind nav */
 }
