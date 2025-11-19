@@ -1,96 +1,83 @@
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #111;
+}
 
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #fafafa;
-    color: #222;
-    text-align: center;
-  }
-  
+nav {
+  width: 100%;
+  background: #111;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  align-items: center;
+}
 
-  header {
-    background: #111;
-    color: white;
-    padding: 1.5rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-  }
-  
-  nav {
-    margin-top: 10px;
-  }
-  
-  nav a {
-    color: #ddd;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  nav a:hover,
-  nav a.active {
-    color: #ff4141;
-  }
-  
+nav .title {
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
 
-  main {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
-    text-align: center;
-  }
-  
-  .profile {
-    width: 200px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 20px;
-  }
-  
-  .story-img {
-    width: 100%;
-    max-width: 600px;
-    border-radius: 10px;
-    margin: 20px auto;
-    display: block;
-  }
-  
-  h1, h2, h3, p {
-    margin-bottom: 15px;
-    line-height: 1.6;
-  }
-  
-  .video-gallery {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    margin-top: 30px;
-  }
-  
-  .video-item {
-    text-align: center;
-  }
-  
-  iframe {
-    border: none;
-    border-radius: 8px;
-  }
-  
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+}
 
-  footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 41px;
-  }
+nav a:hover {
+  text-decoration: underline;
+}
 
-  
+.big-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 60px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.container {
+  width: 80%;
+  margin: 40px auto;
+}
+
+.rounded-img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.flex {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.short-video {
+  width: 100%;
+  border-radius: 16px;
+  background: #f1f1f1;
+  padding: 10px;
+}
+
+.short-video video {
+  width: 100%;
+  border-radius: 12px;
+}
+
+hr {
+  margin: 40px 0;
+}
