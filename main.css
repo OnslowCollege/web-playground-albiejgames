@@ -61,37 +61,6 @@ h1, h2 {
   border-radius: 12px;
 }
 
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #111;
-    padding: 15px 0;
-    z-index: 999;
-}
-
-
-.nav-links {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;  
-    align-items: center;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px 20px;
-    transition: 0.3s;
-}
-
-.nav-links a:hover {
-    color: #f0b800;
-}
-
 
 body {
     padding-top: 70px;
@@ -131,4 +100,36 @@ body {
 }
 
 
+/* ==== FORCE NAV BAR TO TOP, FULL WIDTH ==== */
+#top-nav {
+    position: fixed !important;   /* overrides all other rules */
+    top: 0 !important;
+    left: 0 !important;
 
+    width: 100% !important;
+    height: 60px;
+
+    background: #111;
+    display: flex !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+
+    z-index: 9999 !important;  /* ensures it sits above all content */
+}
+
+#top-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#top-nav a:hover {
+    color: #f0b800;
+}
+
+/* Make room under fixed nav */
+body {
+    padding-top: 70px !important;
+}
