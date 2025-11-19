@@ -62,6 +62,45 @@ h1, h2 {
 }
 
 
+.navbar {
+    width: 100%;
+    background: #111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: fixed;      
+    top: 0;
+    left: 0;
+    z-index: 999;          
+}
+
+.nav-logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f0b800;
+}
+
+
+body {
+    padding-top: 70px;
+}
+
+
 .video-card {
   background: white;
   padding: 20px;
