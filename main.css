@@ -142,22 +142,3 @@ body {
     background: url("https://www.whitespaint.com/cdn/shop/products/CBB79C_1200x.png?v=1627078850") no-repeat center center fixed;
     background-size: cover;
 }
-
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;              
-    justify-content: center;    
-    background-color: transparent; 
-
-nav li {
-    margin: 0 20px; 
-
-nav a {
-    text-decoration: none; 
-    color: #000;     
-    font-weight: 600;
-    font-size: 18px;
-} 
