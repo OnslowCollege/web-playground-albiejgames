@@ -7,102 +7,79 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>RADOTHEGOAT</h1>
-    <p>Videos & Content</p>
-  </header>
+<header>
+  <h1>RADOTHEGOAT</h1>
+  <p>Videos & Content</p>
+</header>
 
-  <nav>
-    <div class="nav-container">
-      <a href="index.html">Home</a>
-      <a href="story.html">Story</a>
-      <a href="videos.html">Videos</a>
-    </div>
-  </nav>
-
-  <div class="container">
-    <section>
-      <h2>My Videos</h2>
-      <p>
-        Here are some of my most meaningful videos. I upload regularly, and
-        each one tells part of my story — from life in Papua New Guinea to my
-        ambitions for the future.
-      </p>
-    </section>
-
-    <section class="video-container">
-      <div class="video-item">
-        <video controls>
-          <source src="videos/video1.mp4" type="video/mp4" />
-          Your browser does not support this video.
-        </video>
-        <h3>Beginning of the Journey</h3>
-        <p>
-          My first real video. I talked about why I want to become a YouTuber
-          and where I’m from.
-        </p>
-      </div>
-
-      <div class="video-item">
-        <video controls>
-          <source src="videos/video2.mp4" type="video/mp4" />
-          Your browser does not support this video.
-        </video>
-        <h3>Life in My Village</h3>
-        <p>
-          A peek into daily life back home: the people, the place, and what
-          shaped me.
-        </p>
-      </div>
-
-      <div class="video-item">
-        <video controls>
-          <source src="videos/video3.mp4" type="video/mp4" />
-          Your browser does not support this video.
-        </video>
-        <h3>Milestone Celebration</h3>
-        <p>
-          Celebrating a subscriber milestone and reflecting on the journey so
-          far.
-        </p>
-      </div>
-      <!-- More video-items as needed -->
-    </section>
-
-    <section>
-      <h2>Leave a Comment</h2>
-      <div class="comment-section">
-        <input type="text" id="name" placeholder="Your name" />
-        <textarea id="comment" placeholder="Your comment"></textarea>
-        <button onclick="addComment()">Submit</button>
-        <div id="comments"></div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Behind the Scenes</h2>
-      <img src="images/gallery1.jpg" alt="Behind the scenes creating content" />
-      <img src="images/gallery2.jpg" alt="Editing on a laptop" />
-      <img src="images/gallery3.jpg" alt="Planning new ideas" />
-      <p>
-        These photos show how much work goes on behind the camera — editing,
-        brainstorming, and passion.
-      </p>
-    </section>
-
-    <section>
-      <h2>What’s Next</h2>
-      <p>
-        I'm planning more: collabs, travel vlogs, live streams, and deeper
-        storytelling. Subscribe, follow, and be a part of this journey.
-      </p>
-    </section>
+<nav>
+  <div class="nav-container">
+    <a href="index.html">Home</a>
+    <a href="story.html">Story</a>
+    <a href="videos.html">Videos</a>
   </div>
+</nav>
 
-  <footer>
-    <p>&copy; 2025 RADOTHEGOAT. All rights reserved.</p>
-  </footer>
+<div class="container">
+  <section>
+    <h2>Video Collection</h2>
+    <p>Explore my videos showcasing my journey, daily life, and milestones.</p>
+  </section>
 
-  <script src="script.js"></script>
+  <section class="video-container">
+    <div class="video-item">
+      <video controls>
+        <source src="videos/video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h3>First Upload</h3>
+      <p>My very first video introducing myself and my goals.</p>
+    </div>
+
+    <div class="video-item">
+      <video controls>
+        <source src="videos/video2.mp4" type="video/mp4">
+      </video>
+      <h3>Village Life</h3>
+      <p>A glimpse of my hometown and its influence on my journey.</p>
+    </div>
+
+    <div class="video-item">
+      <video controls>
+        <source src="videos/video3.mp4" type="video/mp4">
+      </video>
+      <h3>Milestone Celebration</h3>
+      <p>Reflecting on my first 1,000 subscribers and lessons learned.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Leave a Comment</h2>
+    <div class="comment-section">
+      <input type="text" id="name" placeholder="Your name">
+      <textarea id="comment" placeholder="Your comment"></textarea>
+      <button onclick="addComment()">Submit</button>
+      <div id="comments"></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Behind the Scenes</h2>
+    <img src="images/gallery1.jpg" alt="Behind the scenes">
+    <img src="images/gallery2.jpg" alt="Editing content">
+    <img src="images/gallery3.jpg" alt="Planning videos">
+  </section>
+
+  <section>
+    <h2>What's Next</h2>
+    <p>Future content: collabs, live streams, travel vlogs, and new storytelling adventures.</p>
+  </section>
+</div>
+
+<footer>
+  <p>&copy; 2025 RADOTHEGOAT. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
