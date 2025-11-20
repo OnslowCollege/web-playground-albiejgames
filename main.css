@@ -1,11 +1,11 @@
-/* RESET */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Global */
+
 body {
     font-family: "Poppins", Arial, sans-serif;
     text-align: center;
@@ -14,7 +14,7 @@ body {
     line-height: 1.6;
 }
 
-/* Smooth fade animation */
+
 .fade-in {
     animation: fadeIn 1s ease-in-out;
 }
@@ -23,7 +23,6 @@ body {
     to { opacity: 1; }
 }
 
-/* Navigation Bar */
 nav {
     background: #1f1f1f;
     padding: 18px 0;
@@ -56,7 +55,7 @@ nav a.active {
     border-bottom: 2px solid #ffcb3b;
 }
 
-/* Hero Section */
+
 .hero {
     background: linear-gradient(120deg, #ffdd77, #ffb347);
     padding: 80px 20px;
@@ -75,14 +74,14 @@ nav a.active {
     margin-top: 10px;
 }
 
-/* Content wrapper */
+
 .content {
     padding: 50px 20px;
     max-width: 900px;
     margin: auto;
 }
 
-/* Card Style Section Blocks */
+
 .card {
     background: white;
     padding: 30px;
@@ -98,7 +97,7 @@ nav a.active {
     box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
-/* Feature images */
+
 .feature-img {
     width: 80%;
     max-width: 450px;
@@ -108,7 +107,7 @@ nav a.active {
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* Video Cards */
+
 .video-card {
     background: white;
     padding: 25px;
@@ -130,7 +129,6 @@ nav a.active {
     border-radius: 8px;
 }
 
-/* Footer */
 footer {
     background: #1f1f1f;
     color: white;
@@ -143,4 +141,23 @@ body {
     margin: 0;
     background: url("https://www.whitespaint.com/cdn/shop/products/CBB79C_1200x.png?v=1627078850") no-repeat center center fixed;
     background-size: cover;
+}
+
+
+nav ul {
+    list-style: none; 
+    padding: 0;       
+    margin: 0;        
+    display: flex;    
+    justify-content: center; 
+}
+
+nav li {
+    margin: 0 15px; /
+}
+
+nav a {
+    text-decoration: none; 
+    color: #000;           
+    font-weight: 600;
 }
