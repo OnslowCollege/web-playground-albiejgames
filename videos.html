@@ -14,6 +14,49 @@
 </style>
 
 
+<div style="text-align:center; padding:50px; background-color:#f0f0f0;">
+    <h1>RADOTHEGOAT Stats</h1>
+    <div style="display:flex; justify-content:center; gap:50px; flex-wrap:wrap; margin-top:30px;">
+        <div style="background-color:white; padding:30px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); width:200px;">
+            <h2 id="videos" style="font-size:50px; color:#FF0000; margin:0;">0</h2>
+            <p style="margin-top:10px; font-size:18px; color:#333;">Total Videos Uploaded</p>
+        </div>
+        <div style="background-color:white; padding:30px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); width:200px;">
+            <h2 id="views" style="font-size:50px; color:#FF0000; margin:0;">0</h2>
+            <p style="margin-top:10px; font-size:18px; color:#333;">Total Views</p>
+        </div>
+        <div style="background-color:white; padding:30px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); width:200px;">
+            <h2 id="subscribers" style="font-size:50px; color:#FF0000; margin:0;">0</h2>
+            <p style="margin-top:10px; font-size:18px; color:#333;">Subscribers</p>
+        </div>
+    </div>
+</div>
+
+<script>
+function animateCounter(id, target) {
+    let count = 0;
+    const speed = target / 200;
+    const element = document.getElementById(id);
+
+    function update() {
+        count += speed;
+        if (count < target) {
+            element.innerText = Math.floor(count);
+            requestAnimationFrame(update);
+        } else {
+            element.innerText = target.toLocaleString();
+        }
+    }
+    update();
+}
+
+
+animateCounter("videos", 120);       
+animateCounter("views", 45230);      
+animateCounter("subscribers", 8700); 
+</script>
+
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
