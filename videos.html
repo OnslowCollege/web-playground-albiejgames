@@ -1,85 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>RADOTHEGOAT | Videos</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RADOTHEGOAT | Videos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <h1>RADOTHEGOAT</h1>
-  <p>Videos & Content</p>
-</header>
 
-<nav>
-  <div class="nav-container">
-    <a href="index.html">Home</a>
-    <a href="story.html">Story</a>
-    <a href="videos.html">Videos</a>
-  </div>
-</nav>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">RADOTHEGOAT</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="story.html">Story</a></li>
+            <li><a href="videos.html">Videos</a></li>
+        </ul>
+    </nav>
 
-<div class="container">
-  <section>
-    <h2>Video Collection</h2>
-    <p>Explore my videos showcasing my journey, daily life, and milestones.</p>
-  </section>
+    <!-- Video Section -->
+    <section id="videos">
+        <h2>RADOTHEGOAT’s Videos</h2>
+        <div class="videos">
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="Video 1" frameborder="0" allowfullscreen></iframe>
+                <div class="video-content">
+                    <h3>Video Title 1</h3>
+                    <p>Short description of video 1. Share the story behind this video or what viewers can expect.</p>
+                </div>
+            </div>
 
-  <section class="video-container">
-    <div class="video-item">
-      <video controls>
-        <source src="videos/video1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <h3>First Upload</h3>
-      <p>My very first video introducing myself and my goals.</p>
-    </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="Video 2" frameborder="0" allowfullscreen></iframe>
+                <div class="video-content">
+                    <h3>Video Title 2</h3>
+                    <p>Short description of video 2. Explain the content and why fans love it.</p>
+                </div>
+            </div>
 
-    <div class="video-item">
-      <video controls>
-        <source src="videos/video2.mp4" type="video/mp4">
-      </video>
-      <h3>Village Life</h3>
-      <p>A glimpse of my hometown and its influence on my journey.</p>
-    </div>
+            <!-- Add more video cards as needed -->
+        </div>
+    </section>
 
-    <div class="video-item">
-      <video controls>
-        <source src="videos/video3.mp4" type="video/mp4">
-      </video>
-      <h3>Milestone Celebration</h3>
-      <p>Reflecting on my first 1,000 subscribers and lessons learned.</p>
-    </div>
-  </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 RADOTHEGOAT. All rights reserved.</p>
+    </footer>
 
-  <section>
-    <h2>Leave a Comment</h2>
-    <div class="comment-section">
-      <input type="text" id="name" placeholder="Your name">
-      <textarea id="comment" placeholder="Your comment"></textarea>
-      <button onclick="addComment()">Submit</button>
-      <div id="comments"></div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Behind the Scenes</h2>
-    <img src="images/gallery1.jpg" alt="Behind the scenes">
-    <img src="images/gallery2.jpg" alt="Editing content">
-    <img src="images/gallery3.jpg" alt="Planning videos">
-  </section>
-
-  <section>
-    <h2>What's Next</h2>
-    <p>Future content: collabs, live streams, travel vlogs, and new storytelling adventures.</p>
-  </section>
-</div>
-
-<footer>
-  <p>&copy; 2025 RADOTHEGOAT. All rights reserved.</p>
-</footer>
-
-<script src="script.js"></script>
 </body>
 </html>
