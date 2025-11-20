@@ -1,6 +1,13 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Global styling */
 body {
-    margin: 0;
+    margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     background: #f8f8f8;
@@ -11,23 +18,26 @@ body {
 nav {
     background: #222;
     padding: 15px 0;
+    width: 100%;
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* CENTER the navigation items */
+    align-items: center;
+    gap: 30px; /* space between links */
 }
 
 nav li {
-    display: inline;
-    margin: 0 20px;
+    display: inline-block;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    padding-bottom: 4px;
     transition: 0.3s;
 }
 
@@ -42,34 +52,43 @@ nav a.active {
     padding: 60px 20px;
     background: #ffe9a6;
     color: #222;
+    width: 100%;
 }
 
-/* Content blocks */
+/* Main content wrapper */
 .content {
     padding: 40px 20px;
     max-width: 900px;
-    margin: auto;
+    margin: 0 auto; /* CENTER the content block */
+    text-align: center;
 }
 
+/* Images */
 .feature-img {
+    display: block;
+    margin: 20px auto; /* CENTER images */
     width: 80%;
     max-width: 450px;
     border-radius: 8px;
-    margin: 20px 0;
 }
 
 /* Video grid */
 .video-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* CENTER the video cards */
     gap: 30px;
+    margin-top: 20px;
 }
 
+/* Video cards */
 .video-card {
     background: white;
+    width: 320px;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    text-align: center;
 }
 
 .video-card iframe {
@@ -84,4 +103,6 @@ footer {
     color: white;
     padding: 15px 0;
     margin-top: 40px;
+    width: 100%;
+    text-align: center;
 }
