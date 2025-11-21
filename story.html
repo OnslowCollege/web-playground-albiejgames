@@ -1,145 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RADOTHEGOAT - Story</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>RADOTHEGOAT - Story</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
 
-    <style>
-        body {
-            margin: 0;
-            background: url("https://www.whitespaint.com/cdn/shop/products/CBB79C_1200x.png?v=1627078850") 
-            no-repeat center center fixed;
-            background-size: cover;
-        }
-    </style>
+  
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <script>
-        function animateCounter(id, target) {
-            let count = 0;
-            const speed = target / 200;
-            const element = document.getElementById(id);
 
-            function update() {
-                count += speed;
-                if (count < target) {
-                    element.innerText = Math.floor(count);
-                    requestAnimationFrame(update);
-                } else {
-                    element.innerText = target.toLocaleString();
-                }
-            }
-            update();
-        }
-    </script>
-</head>
+<style>
+   body {
+       margin: 0;
+       background: url("https://www.whitespaint.com/cdn/shop/products/CBB79C_1200x.png?v=1627078850") no-repeat center center fixed;
+       background-size: cover;
+   }
+</style>
 
-<body>
 
-<!-- Stats Section -->
 <div style="text-align:center; padding:50px; background-color:#F5F5DC;">
-    <h1>RADOTHEGOAT's Stats - help him grow!</h1>
-
-    <div style="display:flex; justify-content:center; gap:50px; flex-wrap:wrap; margin-top:30px;">
-        <div style="background-color:white; padding:30px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); width:200px;">
-            <h2 id="videos" style="font-size:50px; color:#FF0000; margin:0;">0</h2>
-            <p>Total Videos Uploaded</p>
-        </div>
-
-        <div style="background-color:white; padding:30px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); width:200px;">
-            <h2 id="views" style="font-size:50px; color:#FF0000; margin:0;">0</h2>
-            <p>Total Views</p>
-        </div>
-
-        <div style="background-color:white; padding:30px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); width:200px;">
-            <h2 id="subscribers" style="font-size:50px; color:#FF0000; margin:0;">0</h2>
-            <p>Subscribers</p>
-        </div>
-    </div>
+   <h1>RADOTHEGOAT's Stats - help him grow!</h1>
+   <div style="display:flex; justify-content:center; gap:50px; flex-wrap:wrap; margin-top:30px;">
+       <div style="background-color:white; padding:30px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); width:200px;">
+           <h2 id="videos" style="font-size:50px; color:#FF0000; margin:0;">0</h2>
+           <p style="margin-top:10px; font-size:18px; color:#333;">Total Videos Uploaded</p>
+       </div>
+       <div style="background-color:white; padding:30px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); width:200px;">
+           <h2 id="views" style="font-size:50px; color:#FF0000; margin:0;">0</h2>
+           <p style="margin-top:10px; font-size:18px; color:#333;">Total Views</p>
+       </div>
+       <div style="background-color:white; padding:30px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); width:200px;">
+           <h2 id="subscribers" style="font-size:50px; color:#FF0000; margin:0;">0</h2>
+           <p style="margin-top:10px; font-size:18px; color:#333;">Subscribers</p>
+       </div>
+   </div>
 </div>
 
+
 <script>
-    animateCounter("videos", 11);
-    animateCounter("views", 2702);
-    animateCounter("subscribers", 76);
+function animateCounter(id, target) {
+   let count = 0;
+   const speed = target / 200;
+   const element = document.getElementById(id);
+
+
+   function update() {
+       count += speed;
+       if (count < target) {
+           element.innerText = Math.floor(count);
+           requestAnimationFrame(update);
+       } else {
+           element.innerText = target.toLocaleString();
+       }
+   }
+   update();
+}
+
+
+
+
+animateCounter("videos", 11);      
+animateCounter("views", 2702);     
+animateCounter("subscribers", 76);
 </script>
 
+
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
 <div style="text-align:center;">
+
+
 <nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="story.html" class="active">Story</a></li>
-        <li><a href="videos.html">Videos</a></li>
-    </ul>
+   <ul>
+       <li><a href="index.html">Home</a></li>
+       <li><a href="story.html" class="active">Story</a></li>
+       <li><a href="videos.html">Videos</a></li>
+   </ul>
 </nav>
 
+
 <header class="hero fade-in">
-    <h1>RADOTHEGOAT’s Journey</h1>
+   <h1>RADOTHEGOAT’s Journey</h1>
 </header>
+
 
 <section class="content">
 
-    <div class="card fade-in">
-        <h2>Humble Beginnings</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Port_Moresby_Town2_Mschlauch.jpg" alt="Papua New Guinea Village" class="feature-img">
-        <p>
-            Born in Port Moresby, a city in Papua New Guinea, RADOTHEGOAT grew up surrounded by
-            deep culture, community, and natural beauty. Though his environment was humble, he learned
-            the value of hard work and dreaming big.
-        </p>
-    </div>
 
-    <div class="card fade-in">
-        <h2>The Struggles</h2>
-        <p>
-            With limited internet access, scarce equipment, and few resources, the path to YouTube
-            success was not easy. Many obstacles stood in his way — but none strong enough to break his determination.
-        </p>
-    </div>
+   <div class="card fade-in">
+       <h2>Humble Beginnings</h2>
+       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Port_Moresby_Town2_Mschlauch.jpg" alt="Papua New Guinea Village" class="feature-img">
 
-    <div class="card fade-in">
-        <h2>The Dream</h2>
-        <p>
-            Today, RADOTHEGOAT works tirelessly toward his goal: <br><br>
-            <strong>To become the world’s biggest YouTuber and inspire others never to give up.</strong> <br><br>
-            His journey is a reminder that greatness can come from anywhere.
-        </p>
-    </div>
 
-</section>
+       <p>
+           Born in Port Moresby, a city in Papua New Guinea, RADOTHEGOAT grew up surrounded by
+           deep culture, community, and natural beauty. Though his environment was humble,
+           he learned the value of hard work and dreaming big.
+       </p>
+   </div>
+
+
+   <div class="card fade-in">
+       <h2>The Struggles</h2>
+       <p>
+           With limited internet access, scarce equipment, and few resources, the path to
+           YouTube success was not easy. Many obstacles stood in his way — but none strong
+           enough to break his determination.
+       </p>
+   </div>
+
+
+   <div class="card fade-in">
+       <h2>The Dream</h2>
+       <p>
+           Today, RADOTHEGOAT works tirelessly toward his goal:
+           <br><br>
+           <strong>To become the world’s biggest YouTuber and inspire others never to give up.</strong>
+           <br><br>
+           His journey is a reminder that greatness can come from anywhere.
+       </p>
+   </div>
+
 
 <section style="background-color:#F5F5DC; padding:50px; text-align:center; border-radius:10px; margin:30px 0;">
-    <h2>About RADOTHEGOAT</h2>
-    <p style="max-width:800px; margin:auto;">
-        RADOTHEGOAT is an aspiring YouTuber from Papua New Guinea with a passion for creating unique
-        and entertaining content...
-    </p>
-
-    <h3>Fun Facts & Behind-the-Scenes</h3>
-
-    <ul style="max-width:700px; margin:auto; text-align:left;">
-        <li>Started making videos with just a smartphone.</li>
-        <li>Draws inspiration from his local culture.</li>
-        <li>Every video has at least one funny blooper.</li>
-        <li>Responds personally to fan comments.</li>
-        <li>Aims to inspire others through content.</li>
-    </ul>
+ <h2 style="color:#333; font-size:36px; margin-bottom:20px;">About RADOTHEGOAT</h2>
+  <p style="font-size:18px; color:#333; max-width:800px; margin:0 auto 20px auto;">
+   RADOTHEGOAT is an aspiring YouTuber from Papua New Guinea with a passion for creating unique and entertaining content. Despite facing challenges early in his journey, he has remained dedicated to his dream of becoming one of the world’s biggest content creators. His videos showcase creativity, humor, and his unique perspective on life.
+ </p>
+  <h3 style="color:#333; font-size:28px; margin-top:30px;">Fun Facts & Behind-the-Scenes</h3>
+ <ul style="list-style-type:circle; font-size:16px; color:#333; max-width:700px; margin:20px auto 0 auto; text-align:left; padding-left:20px;">
+   <li>RADOTHEGOAT started making videos with just a smartphone and a lot of imagination.</li>
+   <li>He often draws inspiration from his hometown and local culture in Papua New Guinea.</li>
+   <li>Every video involves planning, scripting, and at least one funny blooper!</li>
+   <li>He interacts personally with fans, responding to comments and feedback on his videos.</li>
+   <li>RADOTHEGOAT is motivated by the goal of inspiring others through his content.</li>
+ </ul>
 </section>
 
-<!-- Social Buttons -->
+
+
+
 <a href="https://www.youtube.com/@RADOTHEGOAT/shorts" target="_blank" class="youtube-button">Visit RADOTHEGOAT's YouTube Channel</a>
+
+
+<style>
+.youtube-button {
+   display: inline-block;
+   padding: 12px 24px;
+   background-color: #FF0000;
+   color: white;
+   font-weight: bold;
+   text-decoration: none;
+   border-radius: 5px;
+   transition: background-color 0.3s ease;
+}
+
+
+.youtube-button:hover {
+   background-color: #cc0000;
+}
+</style>
+
+
+
 
 <a href="https://www.tiktok.com/@radothegoat" target="_blank" class="tiktok-button">Visit RADOTHEGOAT's TikTok</a>
 
+
+<style>
+.tiktok-button {
+   display: inline-block;
+   padding: 12px 24px;
+   background-color: #69C9D0;
+   color: white;
+   font-weight: bold;
+   text-decoration: none;
+   border-radius: 5px;
+   transition: background-color 0.3s ease;
+   margin: 10px 0;
+}
+
+
+.tiktok-button:hover {
+   background-color: #2aa3b2;
+}
+</style>
+
+
+<!-- Donate Button -->
 <a href="https://streamlabs.com/radothegoat/tip" target="_blank" class="donate-button">Donate to RADOTHEGOAT</a>
 
+
+<style>
+.donate-button {
+   display: inline-block;
+   padding: 12px 24px;
+   background-color: #FF8C00; /* Bright orange for donation */
+   color: white;
+   font-weight: bold;
+   text-decoration: none;
+   border-radius: 5px;
+   transition: background-color 0.3s ease;
+   margin: 10px 0;
+}
+
+
+.donate-button:hover {
+   background-color: #e67600;
+}
+</style>
+
+
+
+
+</section>
+
+
 <footer>
-    <p>© 2025 RADOTHEGOAT Website</p>
+   <p>© 2025 RADOTHEGOAT Website</p>
 </footer>
 
+
 </div>
+
+
 </body>
 </html>

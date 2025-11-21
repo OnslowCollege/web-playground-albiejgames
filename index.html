@@ -1,232 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RADOTHEGOAT - Home</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>RADOTHEGOAT - Home</title>
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="style.css">
 
-    <!-- Background Fix -->
-    <style>
-        body {
-            margin: 0;
-            background: url("https://www.whitespaint.com/cdn/shop/products/CBB79C_1200x.png?v=1627078850") 
-                        no-repeat center center fixed;
-            background-size: cover;
-        }
-    </style>
-</head>
 
-<body>
+<style>
+   body {
+       margin: 0;
+       background: url("https://www.whitespaint.com/cdn/shop/products/CBB79C_1200x.png?v=1627078850") no-repeat center center fixed;
+       background-size: cover;
+   }
+</style>
 
-<!-- STATS BANNER -->
+
 <div style="text-align:center; padding:50px; background-color:#F5F5DC;">
-    <h1>RADOTHEGOAT's Stats - help him grow!</h1>
-
-    <div style="display:flex; justify-content:center; gap:50px; flex-wrap:wrap; margin-top:30px;">
-
-        <div style="background-color:white; padding:30px; border-radius:10px;
-                    box-shadow:0 4px 10px rgba(0,0,0,0.1); width:200px;">
-            <h2 id="videos" style="font-size:50px; color:#FF0000; margin:0;">0</h2>
-            <p style="margin-top:10px; font-size:18px; color:#333;">Total Videos Uploaded</p>
-        </div>
-
-        <div style="background-color:white; padding:30px; border-radius:10px;
-                    box-shadow:0 4px 10px rgba(0,0,0,0.1); width:200px;">
-            <h2 id="views" style="font-size:50px; color:#FF0000; margin:0;">0</h2>
-            <p style="margin-top:10px; font-size:18px; color:#333;">Total Views</p>
-        </div>
-
-        <div style="background-color:white; padding:30px; border-radius:10px;
-                    box-shadow:0 4px 10px rgba(0,0,0,0.1); width:200px;">
-            <h2 id="subscribers" style="font-size:50px; color:#FF0000; margin:0;">0</h2>
-            <p style="margin-top:10px; font-size:18px; color:#333;">Subscribers</p>
-        </div>
-
-    </div>
+   <h1>RADOTHEGOAT's Stats - help him grow!</h1>
+   <div style="display:flex; justify-content:center; gap:50px; flex-wrap:wrap; margin-top:30px;">
+       <div style="background-color:white; padding:30px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); width:200px;">
+           <h2 id="videos" style="font-size:50px; color:#FF0000; margin:0;">0</h2>
+           <p style="margin-top:10px; font-size:18px; color:#333;">Total Videos Uploaded</p>
+       </div>
+       <div style="background-color:white; padding:30px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); width:200px;">
+           <h2 id="views" style="font-size:50px; color:#FF0000; margin:0;">0</h2>
+           <p style="margin-top:10px; font-size:18px; color:#333;">Total Views</p>
+       </div>
+       <div style="background-color:white; padding:30px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); width:200px;">
+           <h2 id="subscribers" style="font-size:50px; color:#FF0000; margin:0;">0</h2>
+           <p style="margin-top:10px; font-size:18px; color:#333;">Subscribers</p>
+       </div>
+   </div>
 </div>
 
-<!-- NAVIGATION -->
-<nav>
-    <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="story.html">Story</a></li>
-        <li><a href="videos.html">Videos</a></li>
-    </ul>
-</nav>
 
-<!-- HERO SECTION -->
-<header class="hero fade-in">
-    <h1>RADOTHEGOAT</h1>
-    <p>From the villages of Papua New Guinea to YouTube stardom</p>
-</header>
-
-<!-- MAIN CONTENT -->
-<section class="content fade-in">
-    <div class="card fade-in">
-
-        <img src="https://yt3.googleusercontent.com/AsX939q5L_8PHr_N5z4LI3nxiVa9MxVtNgfMDhIHL25Y_IU2_tGxMnQqkTVL4Xhf0ZcyDSGEVHA=s160-c-k-c0x00ffffff-no-rj"
-             alt="RADOTHEGOAT" class="feature-img">
-
-        <h2>Welcome</h2>
-
-        <p>
-            RADOTHEGOAT is an aspiring YouTuber born in the heart of Papua New Guinea.
-            His dream is to become the world’s biggest YouTuber while inspiring millions
-            through his resilience, optimism, and creativity.
-        </p>
-
-        <!-- FAN WALL -->
-        <div id="fan-wall" style="max-width:600px;margin:auto;padding:20px;border:2px solid #ccc;border-radius:10px;">
-            <h2 style="text-align:center;">RADOTHEGOAT Fan Wall</h2>
-
-            <form id="fanForm" style="margin-bottom:20px;">
-                <input type="text" id="fanName" placeholder="Your Name" required
-                       style="width:48%;padding:10px;margin-right:4%;border-radius:5px;border:1px solid #ccc;">
-                <input type="text" id="fanMessage" placeholder="Your Message" required
-                       style="width:48%;padding:10px;border-radius:5px;border:1px solid #ccc;">
-
-                <button type="submit"
-                        style="display:block;width:100%;padding:10px;margin-top:10px;
-                               background-color:#F5F5DC;border:none;border-radius:5px;font-weight:bold;cursor:pointer;">
-                    Post Message
-                </button>
-            </form>
-
-            <div id="messages" style="max-height:400px;overflow-y:auto;border-top:1px solid #ccc;padding-top:10px;"></div>
-        </div>
-
-        <!-- YOUTUBE BUTTON -->
-        <a href="https://www.youtube.com/@RADOTHEGOAT/shorts" target="_blank" class="youtube-button">
-            Visit RADOTHEGOAT's YouTube Channel
-        </a>
-
-        <style>
-            .youtube-button {
-                display: inline-block;
-                padding: 12px 24px;
-                background-color: #FF0000;
-                color: white;
-                font-weight: bold;
-                text-decoration: none;
-                border-radius: 5px;
-                transition: background-color 0.3s ease;
-            }
-            .youtube-button:hover {
-                background-color: #cc0000;
-            }
-        </style>
-
-    </div>
-</section>
-
-<!-- TIKTOK BUTTON -->
-<a href="https://www.tiktok.com/@radothegoat" target="_blank" class="tiktok-button">Visit RADOTHEGOAT's TikTok</a>
-
-<style>
-    .tiktok-button {
-        display: inline-block;
-        padding: 12px 24px;
-        background-color: #69C9D0;
-        color: white;
-        font-weight: bold;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-        margin: 10px 0;
-    }
-    .tiktok-button:hover {
-        background-color: #2aa3b2;
-    }
-</style>
-
-<!-- DONATE BUTTON -->
-<a href="https://streamlabs.com/radothegoat/tip" target="_blank" class="donate-button">Donate to RADOTHEGOAT</a>
-
-<style>
-    .donate-button {
-        display: inline-block;
-        padding: 12px 24px;
-        background-color: #FF8C00;
-        color: white;
-        font-weight: bold;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-        margin: 10px 0;
-    }
-    .donate-button:hover {
-        background-color: #e67600;
-    }
-</style>
-
-<!-- FOOTER -->
-<footer>
-    <p>© 2025 RADOTHEGOAT Website</p>
-</footer>
-
-<!-- COUNTER SCRIPT -->
 <script>
 function animateCounter(id, target) {
-    let count = 0;
-    const speed = target / 200;
-    const element = document.getElementById(id);
+   let count = 0;
+   const speed = target / 200;
+   const element = document.getElementById(id);
 
-    function update() {
-        count += speed;
-        if (count < target) {
-            element.innerText = Math.floor(count);
-            requestAnimationFrame(update);
-        } else {
-            element.innerText = target.toLocaleString();
-        }
-    }
-    update();
+
+   function update() {
+       count += speed;
+       if (count < target) {
+           element.innerText = Math.floor(count);
+           requestAnimationFrame(update);
+       } else {
+           element.innerText = target.toLocaleString();
+       }
+   }
+   update();
 }
 
-animateCounter("videos", 11);
-animateCounter("views", 2702);
+
+
+
+animateCounter("videos", 11);      
+animateCounter("views", 2702);     
 animateCounter("subscribers", 76);
 </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-<!-- FAN WALL SCRIPT -->
+
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div style="text-align:center;">
+
+
+<nav>
+   <ul>
+       <li><a href="index.html" class="active">Home</a></li>
+       <li><a href="story.html">Story</a></li>
+       <li><a href="videos.html">Videos</a></li>
+   </ul>
+</nav>
+
+
+<header class="hero fade-in">
+   <h1>RADOTHEGOAT</h1>
+   <p>From the villages of Papua New Guinea to YouTube stardom</p>
+</header>
+
+
+
+
+<section class="content fade-in">
+   <div class="card fade-in">
+       <img src="https://yt3.googleusercontent.com/AsX939q5L_8PHr_N5z4LI3nxiVa9MxVtNgfMDhIHL25Y_IU2_tGxMnQqkTVL4Xhf0ZcyDSGEVHA=s160-c-k-c0x00ffffff-no-rj" alt="RADOTHEGOAT" class="feature-img">
+
+
+       <h2>Welcome</h2>
+       <p>
+           RADOTHEGOAT is an aspiring YouTuber born in the heart of Papua New Guinea. 
+           His dream is to become the world’s biggest YouTuber while inspiring millions
+           through his resilience, optimism, and creativity.
+       </p>
+  
+<div id="fan-wall" style="max-width:600px;margin:auto;padding:20px;border:2px solid #ccc;border-radius:10px;">
+ <h2 style="text-align:center;">RADOTHEGOAT Fan Wall</h2>
+
+
+ <form id="fanForm" style="margin-bottom:20px;">
+   <input type="text" id="fanName" placeholder="Your Name" required
+          style="width:48%;padding:10px;margin-right:4%;border-radius:5px;border:1px solid #ccc;">
+   <input type="text" id="fanMessage" placeholder="Your Message" required
+          style="width:48%;padding:10px;border-radius:5px;border:1px solid #ccc;">
+   <button type="submit" style="display:block;width:100%;padding:10px;margin-top:10px;
+           background-color:#F5F5DC;border:none;border-radius:5px;font-weight:bold;cursor:pointer;">
+     Post Message
+   </button>
+ </form>
+
+
+ <div id="messages" style="max-height:400px;overflow-y:auto;border-top:1px solid #ccc;padding-top:10px;">
+ 
+ </div>
+</div>
+
+
 <script>
-const fanForm = document.getElementById('fanForm');
-const messagesDiv = document.getElementById('messages');
+ const fanForm = document.getElementById('fanForm');
+ const messagesDiv = document.getElementById('messages');
 
-let messages = JSON.parse(localStorage.getItem('fanWallMessages')) || [];
 
-function displayMessages() {
-    messagesDiv.innerHTML = '';
-    messages.slice().reverse().forEach(msg => {
-        const msgDiv = document.createElement('div');
-        msgDiv.style.padding = '10px';
-        msgDiv.style.borderBottom = '1px solid #eee';
-        msgDiv.innerHTML = `<strong>${msg.name}:</strong> ${msg.message}`;
-        messagesDiv.appendChild(msgDiv);
-    });
+
+
+ let messages = JSON.parse(localStorage.getItem('fanWallMessages')) || [];
+
+
+ function displayMessages() {
+   messagesDiv.innerHTML = '';
+   messages.slice().reverse().forEach(msg => {
+     const msgDiv = document.createElement('div');
+     msgDiv.style.padding = '10px';
+     msgDiv.style.borderBottom = '1px solid #eee';
+     msgDiv.innerHTML = `<strong>${msg.name}:</strong> ${msg.message}`;
+     messagesDiv.appendChild(msgDiv);
+   });
+ }
+
+
+ fanForm.addEventListener('submit', function(e) {
+   e.preventDefault();
+   const name = document.getElementById('fanName').value.trim();
+   const message = document.getElementById('fanMessage').value.trim();
+   if (!name || !message) return;
+
+
+   messages.push({name, message});
+   localStorage.setItem('fanWallMessages', JSON.stringify(messages));
+
+
+   displayMessages();
+   fanForm.reset();
+ });
+
+
+
+
+ displayMessages();
+</script>
+
+
+
+
+   <a href="https://www.youtube.com/@RADOTHEGOAT/shorts" target="_blank" class="youtube-button">Visit RADOTHEGOAT's YouTube Channel</a>
+
+
+<style>
+.youtube-button {
+   display: inline-block;
+   padding: 12px 24px;
+   background-color: #FF0000;
+   color: white;
+   font-weight: bold;
+   text-decoration: none;
+   border-radius: 5px;
+   transition: background-color 0.3s ease;
 }
 
-fanForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    const name = document.getElementById('fanName').value.trim();
-    const message = document.getElementById('fanMessage').value.trim();
-    if (!name || !message) return;
 
-    messages.push({name, message});
-    localStorage.setItem('fanWallMessages', JSON.stringify(messages));
+.youtube-button:hover {
+   background-color: #cc0000;
+}
+</style>
+  
+   </div>
 
-    displayMessages();
-    fanForm.reset();
-});
 
-displayMessages();
-</script>
+</section>
+
+
+
+
+<a href="https://www.tiktok.com/@radothegoat" target="_blank" class="tiktok-button">Visit RADOTHEGOAT's TikTok</a>
+
+
+<style>
+.tiktok-button {
+   display: inline-block;
+   padding: 12px 24px;
+   background-color: #69C9D0;
+   color: white;
+   font-weight: bold;
+   text-decoration: none;
+   border-radius: 5px;
+   transition: background-color 0.3s ease;
+   margin: 10px 0;
+}
+
+
+.tiktok-button:hover {
+   background-color: #2aa3b2;
+}
+</style>
+
+
+
+
+<a href="https://streamlabs.com/radothegoat/tip" target="_blank" class="donate-button">Donate to RADOTHEGOAT</a>
+
+
+<style>
+.donate-button {
+   display: inline-block;
+   padding: 12px 24px;
+   background-color: #FF8C00;
+   color: white;
+   font-weight: bold;
+   text-decoration: none;
+   border-radius: 5px;
+   transition: background-color 0.3s ease;
+   margin: 10px 0;
+}
+
+
+.donate-button:hover {
+   background-color: #e67600;
+}
+</style>
+
+
+
+
+
+
+<footer>
+   <p>© 2025 RADOTHEGOAT Website</p>
+</footer>
+
+
+</div>
+
 
 </body>
 </html>
